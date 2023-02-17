@@ -132,10 +132,10 @@ const db = [
   }
 ];
 
-const products = window.localStorage.getItem("productsDB")
-? JSON.parse(window.localStorage.getItem("productsDB"))
-: db;
-// const products = db;
+// const products = window.localStorage.getItem("productsDB")
+// ? JSON.parse(window.localStorage.getItem("productsDB"))
+// : db;
+const products = db;
 
 // #2 Pintar los productos en el DOM
 const productContainer = document.getElementById("products__content");
@@ -254,9 +254,10 @@ function printFilter(){
 printFilter();
 
 // #3 Carrito
-let cart = window.localStorage.getItem("cartDB")
-  ? JSON.parse(window.localStorage.getItem("cartDB"))
-  : [];
+// let cart = window.localStorage.getItem("cartDB")
+  // ? JSON.parse(window.localStorage.getItem("cartDB"))
+  // : [];
+  let cart = [];
 const cartContainer = document.getElementById("cart__container");
 const cartCount = document.getElementById("cart-count");
 const itemsCount = document.getElementById("items-count");

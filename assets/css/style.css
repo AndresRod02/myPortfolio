@@ -16,6 +16,7 @@
   --body-color: hsl(206, 4%, 97%);
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
+  --button-hover: hsl(0, 0%, 21%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Roboto', sans-serif;
@@ -122,6 +123,7 @@ body.dark-theme {
   --body-color: hsl(0, 0%, 0%);
   --container-color: hsl(0, 0%, 9%);
   --border-color: hsl(0, 0%, 20%);
+  --button-hover: #fb2941b8;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -430,7 +432,7 @@ body.dark-theme {
 }
 
 .button:hover {
-  background-color: var(--button-color);
+  background-color: var(--button-hover);
   color: var(--body-color);
 }
 
@@ -449,9 +451,6 @@ body.dark-theme {
 }
 .button:active{
   opacity: 0;
-}
-.button::after{
-  background-color: #fb2942;
 }
 /*=============== PRODUCTS ===============*/
 .products {
@@ -556,7 +555,10 @@ body.dark-theme {
   color: var(--container-color);
   box-shadow: 0 4px 12px hsla(206, 4%, 4%, .2);
 }
-
+.products__button:hover{
+  background-color: var(--button-hover);
+  color: #ffff;
+}
 .products__card:hover .products__img {
   transform: translateY(-.25rem);
 }

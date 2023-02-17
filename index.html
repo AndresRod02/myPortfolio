@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- SWEET ALERT -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css">
+  <!-- AOS ANIMATION -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
 <body>
@@ -186,7 +188,7 @@
 
         <div class="products__content grid" id="products__content">
 
-          <article class="products__card hoodies">
+          <article data-aos="flip-left" class="products__card hoodies">
             <div class="products__shape">
               <img src="assets/img/featured1.png" alt="Hoodies" class="products__img">
             </div>
@@ -289,6 +291,11 @@
   <script src="assets/js/cart.js"></script>
   <!-- SWEET ALERT -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+  <!-- AOS ANIMATION -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

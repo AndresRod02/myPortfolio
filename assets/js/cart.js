@@ -143,7 +143,7 @@ function printProducts() {
   let html = "";
   for (const product of products) {
     html += `
-    <article class="products__card ${product.category}">
+    <article data-aos="flip-left" class="products__card ${product.category}">
       <div class="products__shape">
         <img src="${product.image}" alt="${product.name}" class="products__img">
       </div>

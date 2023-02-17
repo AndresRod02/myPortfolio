@@ -115,12 +115,12 @@ button {
 body.dark-theme {
   /* --first-color: hsl(182, 53%, 74%); */
   --button-color: hsl(246, 16%, 12%);
-  --button-color-alt: hsl(0, 0%, 28%);
+  --button-color-alt: hsl(136, 85%, 39%);
   --card-color: hsl(240, 6%, 30%);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 75%);
   --body-color: hsl(0, 0%, 0%);
-  --container-color: hsl(0, 0%, 0%);
+  --container-color: hsl(0, 0%, 9%);
   --border-color: hsl(0, 0%, 20%);
 }
 
@@ -447,8 +447,11 @@ body.dark-theme {
 .button--small {
   padding: 1rem 1.5rem;
 }
-.button::before{
-  background-color: aliceblue;
+.button:active{
+  opacity: 0;
+}
+.button::after{
+  background-color: #fb2942;
 }
 /*=============== PRODUCTS ===============*/
 .products {
